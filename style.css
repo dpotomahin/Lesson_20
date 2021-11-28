@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+.container div{
+   padding: 10px;
+}
+.container{
+    background-color: olivedrab;
+    display: grid; 
+    grid-template-areas: 
+                         'header header header'
+                         'sidebar content nav'
+                         'footer footer footer';
+   grid-gap: 10px;
+   grid-template-columns: 1fr 6fr 1fr;                       
+}
+.header{
+    text-align: center;
+    font-size: 200px;
+    background: url(./img/8_1.jpg) center;
+    background-size: cover ;
+    height: 200px;
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+    color:aliceblue ;
+}
+ .sidebar h1{
+     color:wheat;
+ }
+.sidebar a{
+    font-size: 20px;
+    text-decoration: none;
+    color:aliceblue ;
+}
+.sidebar li:hover{
+    color: black;
+}
+.sidebar a:hover{
+    color: black;
+}
+.content{
+    max-height: 600px;
+    grid-area: content;
+    background: url(./img/Gardening-817810.jpg)center;
+    background-size: cover ;
+}
+.nav{
+    max-height: 600px;
+    grid-area: nav;
+}
+.nav img{
+    height: 50%;
+    width: 100%;
+}
+span{
+    color: white;
+}
+.footer{
+    text-align: center;
+    grid-area: footer;
+}
